@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { Outlet } from 'react-router-dom'
 
-const Home = () => {
+
+const Landing = () => {
   return (
     <>
        <Navbar/>
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Landing

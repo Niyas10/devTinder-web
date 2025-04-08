@@ -1,10 +1,13 @@
 import React from 'react'
+import LoginInputCard from '../components/LoginInputCard'
 
 function Login() {
   return (
-    <div>
-        <h1>Niyas</h1>
-    </div>
+   <>
+
+<LoginInputCard/>
+   
+   </>
   )
 }
 

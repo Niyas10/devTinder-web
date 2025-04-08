@@ -8,3 +8,4 @@
 - craete footer 
 - create a routes 
 - create a login  page 
+- cors and axios installed cors setup in app.js 

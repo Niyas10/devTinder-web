@@ -13,6 +13,7 @@ const UserRoute = () => {
 
       <Route element={<PrivetRouter />}>
         <Route path="/feed" element={<Feed />} />
+    
       </Route>
     </Routes>
   );

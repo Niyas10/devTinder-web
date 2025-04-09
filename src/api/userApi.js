@@ -9,3 +9,8 @@ export const userProfileView = async ()=>{
     const data = await userAxiosInstance.get("/profile/view");
     return data ;
 }
+
+export const userLogout = async ()=>{
+    const data = await userAxiosInstance.post("/logout")
+    return data 
+}

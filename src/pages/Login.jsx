@@ -1,14 +1,19 @@
-import React from 'react'
-import LoginInputCard from '../components/LoginInputCard'
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import LoginInputCard from "../components/LoginInputCard";
 
-function Login() {
-  return (
-   <>
+const Login = () => {
+  const navigate = useNavigate();
+  const userData = useSelector((state) => state.user);
 
-<LoginInputCard/>
-   
-   </>
-  )
+  useEffect(() => {
+    if (userData && userData._id) {
+      navigate("/feed"); 
+    }
+  }, [userData]);
+
+
+  return <LoginInputCard />; 
 }
-
-export default Login
+export default Login;

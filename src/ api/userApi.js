@@ -2,5 +2,10 @@ import { userAxiosInstance } from "./axiosInstance";
 
 export const userLogin = async (emailId,password)=>{
     const data  = await  userAxiosInstance.post('/login',{emailId,password});
-    return data 
+    return data ;
+}
+
+export const userProfileView = async ()=>{
+    const data = await userAxiosInstance.get("/profile/view");
+    return data ;
 }

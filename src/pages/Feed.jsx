@@ -1,9 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+
 
 const Feed = () => {
+  
   return (
-    <Navbar/>
+
+
+<h1>feed</h1>
   )
 }
 

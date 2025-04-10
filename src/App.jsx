@@ -6,7 +6,7 @@ import appStore from "./store/store";
 function App() {
   return (
     <Provider  store={appStore}>
-    <BrowserRouter basename="/">
+    <BrowserRouter >
       <Routes>
         <Route path="/*" element={<UserRoute />} />
       </Routes>

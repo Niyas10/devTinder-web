@@ -1,17 +1,12 @@
 import React from 'react'
-
-
+import Navbar from '../components/common/Navbar'
 
 const Feed = () => {
-
-  
   return (
-
-<>
-
-<h1>feed</h1>
-</>
-
+   <>
+   <Navbar/>
+   <h1>Feed</h1>
+   </>
   )
 }
 

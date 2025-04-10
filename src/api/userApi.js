@@ -14,3 +14,8 @@ export const userLogout = async ()=>{
     const data = await userAxiosInstance.post("/logout")
     return data 
 }
+
+export const userFeeds = async()=>{
+    const data = await userAxiosInstance.get("/feed")
+    return data 
+}

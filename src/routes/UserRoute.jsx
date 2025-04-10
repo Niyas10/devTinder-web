@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import Feed from "../pages/Feed";
 import PublicRoute from "../components/CustomRoutes/PublicRoute";
 import ProtectedRoute from "../components/CustomRoutes/ProtectedRoute";
+import Profile from "../pages/Profile";
 const UserRoute = () => {
   return (
 <>
@@ -22,6 +23,10 @@ const UserRoute = () => {
      } />
      <Route path="/feed" element ={<ProtectedRoute>
       <Feed/>
+     </ProtectedRoute>} />
+
+     <Route path="/profile" element ={<ProtectedRoute>
+      <Profile/>
      </ProtectedRoute>} />
   
 </Route>

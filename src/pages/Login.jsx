@@ -4,12 +4,14 @@ import LoginHook from "../hooks/LoginHook";
 const Login = () => {
   const [emailId, setEmailId] = useState("niyasl23@gmail.com");
   const [password, setPassword] = useState("Niyas@123");
-  const Login = LoginHook();
+ const Login = LoginHook()
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    Login(emailId, password);
-  };
+
+ const handleSubmit =(e)=>{
+    e.preventDefault()
+    Login(emailId,password)
+ }
+
 
   return (
     <section className="flex justify-center bg-black items-center min-h-screen">
@@ -52,4 +54,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login

@@ -14,7 +14,7 @@ const LoginHook = () => {
       dispatch(addUser(res.data));
       navigate("/feed" ,{replace:true});
     } catch (err) {
-      console.error("login failed", err);
+      console.error(err.response.message);
     }
   };
   return login;

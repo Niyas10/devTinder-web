@@ -15,6 +15,7 @@ const useFetchFeed = () => {
         const res = await userFeeds();
         if (res?.data?.data) {
           dispatch(addFeed(res.data.data));
+          console.log("hey")
         }
       } catch (err) {
         console.error("Error fetching feed:", err);

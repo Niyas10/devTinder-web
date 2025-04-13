@@ -35,3 +35,9 @@ export const userRequests = async ()=>{
     const data = await userAxiosInstance.get("/user/requests/received")
     return data 
 }
+
+export const userReviewRequest = async (status,requestId)=>{
+    const data = await userAxiosInstance.post(`/request/review/${status}/${requestId}`)
+    console.log(data+"hey")
+     return data 
+}

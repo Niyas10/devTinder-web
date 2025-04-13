@@ -4,7 +4,7 @@ import GetConnectionHook from '../../hooks/GetConnectionHook';
 const ShowConnection = () => {
   const connections = GetConnectionHook();
 
-  if(!connections) return
+  if(!connections) return <p>Looding ... !</p>
   if(connections.length ===0) return <h1>No Connections Found</h1>
 
   return (

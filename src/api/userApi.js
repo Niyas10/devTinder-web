@@ -29,3 +29,9 @@ export const  userConnections = async ()=>{
     const data = await userAxiosInstance.get("/user/connections")
     return data 
 }
+
+
+export const userRequests = async ()=>{
+    const data = await userAxiosInstance.get("/user/requests/received")
+    return data 
+}

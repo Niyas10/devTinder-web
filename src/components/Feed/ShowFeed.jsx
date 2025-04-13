@@ -2,7 +2,8 @@ import React from "react";
 
 const ShowFeed = ({ user }) => {
   return (
-    <div className="flex items-center justify-center">
+<>
+{ user ?  (<div className="flex items-center justify-center">
       <div className="card bg-base-300 w-96 shadow-sm">
         <figure>
         <img
@@ -25,8 +26,10 @@ const ShowFeed = ({ user }) => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </div>) :(
+      <p>NO feed</p>
+    )}
 
+</>
+  )}
 export default ShowFeed;

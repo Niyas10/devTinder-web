@@ -21,6 +21,11 @@ export const userFeeds = async()=>{
 }
 
 export const editProfile = async (profileData) => {
-    const res = await userAxiosInstance.patch("/profile/edit", profileData);
-    return res;
+    const data  = await userAxiosInstance.patch("/profile/edit", profileData);
+    return data ;
   };
+
+export const  userConnections = async ()=>{
+    const data = await userAxiosInstance.get("/user/connections")
+    return data 
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ShowFeed from "../Feed/ShowFeed";
 import EditProfileHook from "../../hooks/EditProfileHook";
 import { useSelector } from "react-redux";
+import ShowProfile from "./ShowProfile";
 
 const ProfileSection = () => {
   const user = useSelector((state) => state.user);
@@ -142,7 +142,7 @@ const ProfileSection = () => {
         </form>
       </div>
 
-      <ShowFeed  user={{
+      <ShowProfile  user={{
     firstName,
     lastName,
     age,

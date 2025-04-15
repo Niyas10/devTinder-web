@@ -1,15 +1,6 @@
 import React from "react";
-import ReviewFeedHook from "../../hooks/ReviewFeedHook";
 
-const ShowFeed = ({ user }) => {
-   const reviewFeed = ReviewFeedHook()
-
-
-   const handleReviewSubmit=(status,userId)=>{
-       reviewFeed(status,userId)
-   }
-
-
+const ShowProfile = ({ user }) => {
   return (
 <>
 { user ?  (<div className="flex items-center justify-center">
@@ -30,8 +21,8 @@ const ShowFeed = ({ user }) => {
           <p>About: {user.about}</p>
 
           <div className="card-actions justify-center gap-[20px] mt-[20px]">
-            <button className="btn btn-primary" onClick={()=>handleReviewSubmit('ignored',user._id)}>Rejected</button>
-            <button className="btn btn-secondary"onClick={()=>handleReviewSubmit('interested',user._id)}>Interested</button>
+            <button className="btn btn-primary">Rejected</button>
+            <button className="btn btn-secondary">Interested</button>
           </div>
         </div>
       </div>
@@ -41,4 +32,4 @@ const ShowFeed = ({ user }) => {
 
 </>
   )}
-export default ShowFeed;
+export default ShowProfile

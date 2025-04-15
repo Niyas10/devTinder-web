@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LoginHook from "../hooks/LoginHook";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [emailId, setEmailId] = useState("niyasl23@gmail.com");
@@ -47,6 +48,8 @@ const Login = () => {
                 Submit
               </button>
             </div>
+
+            <p>You Dont have account <Link to="/signup">Signup</Link> </p>
           </div>
         </div>
       </form>

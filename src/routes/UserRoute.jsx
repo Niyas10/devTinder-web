@@ -6,8 +6,9 @@ import Feed from "../pages/Feed";
 import PublicRoute from "../components/CustomRoutes/PublicRoute";
 import ProtectedRoute from "../components/CustomRoutes/ProtectedRoute";
 import Profile from "../pages/Profile";
-import { Connections } from "../pages/Connections";
-import Requests from "../pages/Requests";
+import  Connections  from "../pages/Connections";
+import Request from "../pages/Requests"
+import Signup from "../pages/Signup";
 const UserRoute = () => {
   return (
     <>
@@ -18,6 +19,14 @@ const UserRoute = () => {
             element={
               <PublicRoute>
                 <Home />
+              </PublicRoute>
+            }
+          />
+               <Route
+             path="/signup"
+            element={
+              <PublicRoute>
+                <Signup />
               </PublicRoute>
             }
           />
@@ -58,7 +67,7 @@ const UserRoute = () => {
             path="/requests"
             element={
               <ProtectedRoute>
-                <Requests />
+                <Request />
               </ProtectedRoute>
             }
           />

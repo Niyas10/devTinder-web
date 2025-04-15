@@ -9,7 +9,13 @@ const Feed = () => {
   return (
     <>
       <Navbar />
-      {feed   && <ShowFeed user={feed[0]} />}
+      {!feed ? (
+        <h1>Loading...</h1>
+      ) : feed.length <= 0 ? (
+        <h1>No New User Found ..!</h1>
+      ) : (
+        <ShowFeed user={feed[0]} />
+      )}
     </>
   );
 };

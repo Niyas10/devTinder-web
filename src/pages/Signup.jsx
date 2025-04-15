@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import SignUpHook from "../hooks/SIgnUpHook";
 
 const Signup = () => {
-  const [firstName, setFirstName] = useState("niyas");
-  const [emailId, setEmailId] = useState("testUser@gmail.com");
-  const [password, setPassword] = useState("Test@123");
+  const [firstName, setFirstName] = useState("");
+  const [emailId, setEmailId] = useState("");
+  const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [age, setAge] = useState("23");
+  const [age, setAge] = useState("");
   const [gender, setGender] = useState();
 
   const signupsave = SignUpHook();
